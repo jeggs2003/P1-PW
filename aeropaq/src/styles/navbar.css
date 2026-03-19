@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: var(--navbar-h);
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.navbar--scrolled {
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+.navbar__logo-icon { font-size: 1.4rem; }
+.navbar__logo strong { color: var(--color-accent); }
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.navbar__link {
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: color 0.15s, background 0.15s;
+}
+.navbar__link:hover {
+  color: var(--color-primary);
+  background: var(--color-bg-soft);
+}
+
+.navbar__cta {
+  margin-left: 8px;
+  padding: 8px 18px;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.navbar__cta:hover { background: var(--color-accent-dark); }
+
+/* Burger */
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+.navbar__burger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar__burger { display: flex; }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: var(--navbar-h);
+    left: 0; right: 0;
+    flex-direction: column;
+    background: #fff;
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 24px;
+    gap: 4px;
+    margin-left: 0;
+    box-shadow: var(--shadow-md);
+  }
+  .navbar__links--open { display: flex; }
+  .navbar__link, .navbar__cta { width: 100%; text-align: left; }
+  .navbar__cta { margin-left: 0; margin-top: 8px; border-radius: var(--radius-md); }
+}
