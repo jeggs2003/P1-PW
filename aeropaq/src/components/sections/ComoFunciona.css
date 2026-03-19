@@ -1,0 +1,45 @@
+.como-funciona { background: var(--color-bg-soft); }
+
+.pasos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0;
+  position: relative;
+}
+
+.paso {
+  text-align: center;
+  padding: 0 24px;
+  position: relative;
+}
+
+.paso__num {
+  width: 64px; height: 64px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.paso__linea {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.paso__titulo { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+.paso__desc { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .pasos__grid { grid-template-columns: 1fr; gap: 32px; }
+  .paso__linea { display: none; }
+}
