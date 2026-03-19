@@ -1,0 +1,25 @@
+.cobertura { background: var(--color-bg); }
+.cobertura__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cobertura__card {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  background: var(--color-bg-soft);
+  width: calc(33.333% - 12px);
+}
+
+.cobertura__region { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.cobertura__detalle { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.5; }
+
+@media (max-width: 768px) {
+  .cobertura__card { width: 100%; }
+}
