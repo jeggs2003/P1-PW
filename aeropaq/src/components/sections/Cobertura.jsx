@@ -2,10 +2,10 @@ import './Cobertura.css'
 
 const zonas = [
   { region: '🇬🇹 Guatemala', detalle: 'Todos los departamentos' },
-  { region: '🌎 Centroamérica', detalle: 'El Salvador, Honduras, Nicaragua, Costa Rica, Panamá, Belice' },
-  { region: '🌍 Sudamérica', detalle: 'México, Colombia, Venezuela, Perú, Ecuador, Chile, Argentina' },
+  { region: '🇨🇦 Centroamérica', detalle: 'El Salvador, Honduras, Nicaragua, Costa Rica, Panamá, Belice' },
+  { region: 'ʟᴀᴛᴀᴍ Sudamérica', detalle: 'México, Colombia, Venezuela, Perú, Ecuador, Chile, Argentina' },
   { region: '🇺🇸 Norte América', detalle: 'Estados Unidos y Canadá' },
-  { region: '🌐 Europa', detalle: 'España, Italia, Alemania y más' },
+  { region: 'ᴇᴜ Europa', detalle: 'España, Italia, Alemania y más' },
 ]
 
 export default function Cobertura() {
