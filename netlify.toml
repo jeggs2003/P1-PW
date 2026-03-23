@@ -1,0 +1,4 @@
+[build]
+  base = "aeropaq"
+  command = "npm install && npm run build"
+  publish = "dist"
