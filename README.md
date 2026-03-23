@@ -118,11 +118,11 @@ aeropaq/
 
 ## Decisiones técnicas
 
-**Vite sobre Create React App** — Vite ofrece tiempos de build significativamente menores y está activamente mantenido. CRA está deprecado desde 2023.
+**Vite sobre Create React App** — Vite ofrece tiempos de build significativamente menores y está activamente mantenido. CRA está deprecado desde el 2023.
 
-**CSS puro sin frameworks** — El enunciado especifica CSS como tecnología de estilos. Se utilizaron variables CSS (`--color-primary`, `--color-accent`, etc.) para mantener consistencia visual en todo el proyecto.
+**CSS puro sin frameworks** — Se utilizaron variables CSS como (`--color-primary`, `--color-accent`, etc.) para mantener consistencia visual en todo el proyecto.
 
-**React Router v6** — Manejo de rutas del lado del cliente con dos rutas principales: `/` para el landing y `/cotizador` para el cotizador. Se agregó `public/_redirects` para que Netlify sirva correctamente las rutas de una SPA.
+**React Router v6** — El manejo de rutas del lado del cliente con dos rutas principales: `/` para el landing y `/cotizador` para el cotizador. Se agregó `public/_redirects` para que Netlify sirva correctamente las rutas de una SPA.
 
 **Google Apps Script para contacto** — Al ser un sitio completamente estático sin backend, se utilizó Google Apps Script como webhook. El formulario envía los datos en formato JSON y el script los guarda en Google Sheets. El teléfono se guarda con un apóstrofe inicial para evitar que Sheets lo interprete como fórmula.
 
