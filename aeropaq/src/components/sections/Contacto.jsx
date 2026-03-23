@@ -62,7 +62,6 @@ export default function Contacto() {
         </p>
 
         <div className="contacto__wrapper">
-          {/* Info lateral */}
           <div className="contacto__info">
             <div className="contacto__info-item">
               <span>📞</span>
@@ -94,9 +93,9 @@ export default function Contacto() {
             </div>
           </div>
 
-          {/* Formulario */}
+          {/* Form */}
           <form className="contacto__form" onSubmit={handleSubmit} noValidate>
-            <div className="form-row">
+            
               <div className="form-group">
                 <label htmlFor="nombre">Nombre completo *</label>
                 <input
@@ -106,19 +105,8 @@ export default function Contacto() {
                   className={errores.nombre ? 'input--error' : ''}
                 />
                 {errores.nombre && <span className="form-error">{errores.nombre}</span>}
-              </div>
-              <div className="form-group">
-                <label htmlFor="correo">Correo electrónico *</label>
-                <input
-                  id="correo" name="correo" type="email"
-                  placeholder="kmayen@correo.com"
-                  value={form.correo} onChange={handleChange}
-                  className={errores.correo ? 'input--error' : ''}
-                />
-                {errores.correo && <span className="form-error">{errores.correo}</span>}
-              </div>
             </div>
-
+<div className="form-row">
             <div className="form-group">
               <label htmlFor="telefono">Teléfono *</label>
               <input
@@ -129,7 +117,17 @@ export default function Contacto() {
               />
               {errores.telefono && <span className="form-error">{errores.telefono}</span>}
             </div>
-
+            <div className="form-group">
+                <label htmlFor="correo">Correo electrónico *</label>
+                <input
+                  id="correo" name="correo" type="email"
+                  placeholder="kmayen@correo.com"
+                  value={form.correo} onChange={handleChange}
+                  className={errores.correo ? 'input--error' : ''}
+                />
+                {errores.correo && <span className="form-error">{errores.correo}</span>}
+              </div>
+</div>
             <div className="form-group">
               <label htmlFor="mensaje">Mensaje *</label>
               <textarea

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Hero.css'
+import avionImg from '../../images/avion-solamente.png';
+import circuloImg from '../../images/circulo-fondo.png';
 
 export default function Hero() {
   return (
@@ -42,10 +44,13 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__visual">
-          <div className="hero__img-placeholder">
-            <span>✈</span>
+        <div className="hero__overlap-container">
+          <div className="hero__circle-bg">
+            <img src={circuloImg} className="hero__circle-bg" alt="Logística AeroPaq" />
           </div>
+          <img src={avionImg} className="hero__airplane" alt="Avión AeroPaq" />
         </div>
+      </div>
       </div>
     </section>
   )

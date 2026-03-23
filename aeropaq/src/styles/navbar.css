@@ -65,7 +65,6 @@
 }
 .navbar__cta:hover { background: var(--color-accent-dark); }
 
-/* Burger */
 .navbar__burger {
   display: none;
   flex-direction: column;
@@ -84,7 +83,6 @@
   transition: transform 0.2s;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .navbar__burger { display: flex; }
 
