@@ -61,7 +61,6 @@ Los archivos optimizados se generan en la carpeta `dist/`.
 aeropaq/
 ├── public/
 │   ├── _redirects              # Regla de redirección para Netlify (SPA)
-│   └── favicon.svg
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx          # Navegación fija con menú hamburguesa responsive
@@ -148,6 +147,5 @@ El sitio está desplegado en Netlify con integración continua desde GitHub. Cad
 |---|---|
 | Katherine Andrea Mayen Rivera | 1129222 |
 | Javier Estuardo Godinez Gudiel | 1179222 |
-
-Proyecto académico — Programación Web  
+  
 Universidad Rafael Landívar 
