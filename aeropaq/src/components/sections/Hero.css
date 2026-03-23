@@ -148,11 +148,33 @@
 }
 
 @media (max-width: 768px) {
-  .hero__visual { 
-    display: flex;
-    height: 350px;
-    margin-top: 40px;
+  .hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-  .hero__circle-bg { width: 250px; height: 250px; }
-  .hero__airplane { width: 100%; top: 0; }
+
+  .hero__title { font-size: 2rem; }
+
+  .hero__actions { justify-content: center; }
+
+  .hero__stats { justify-content: center; }
+
+  .hero__visual {
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  .hero__circle-bg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero__airplane {
+    width: 100%;
+    top: 0;
+  }
+
+  .hero__overlap-container {
+    max-width: 280px;
+  }
 }

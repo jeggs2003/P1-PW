@@ -18,21 +18,21 @@ export default function SobreNosotros() {
           <h2 className="section-title" style={{ textAlign: 'left' }}>Sobre nosotros</h2>
           <p className="sobre__historia">
             AeroPaq nació en Guatemala con el objetivo de simplificar el envío de paquetes 
-            para personas y empresas[cite: 9, 10]. Desde el principio operamos con un compromiso 
-            claro: rapidez, seguridad y atención personalizada[cite: 20].
+            para personas y empresas. Desde el principio operamos con un compromiso 
+            claro: rapidez, seguridad y atención personalizada.
           </p>
           <div className="sobre__valores">
             <div className="valor">
               <strong>Misión</strong>
-              <p>Conectar a las personas con soluciones de envío confiables y accesibles[cite: 20].</p>
+              <p>Conectar a las personas con soluciones de envío confiables y accesibles.</p>
             </div>
             <div className="valor">
               <strong>Visión</strong>
-              <p>Ser la empresa de paquetería preferida en Centroamérica[cite: 20].</p>
+              <p>Ser la empresa de paquetería preferida en Centroamérica.</p>
             </div>
             <div className="valor">
               <strong>Valores</strong>
-              <p>Confianza · Rapidez · Compromiso · Innovación [cite: 20]</p>
+              <p>Confianza · Rapidez · Compromiso · Innovación</p>
             </div>
           </div>
         </div>
